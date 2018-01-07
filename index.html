@@ -1,9 +1,102 @@
 <html>
-<head>
-  <title>Alixana | Experimental Frontend</title>
-</head>
+  <head>
+    <title>Alixana | Conceptual Frontend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 
-<body>
-  <h1>This is placeholder text | To jest tekst zastępczy</h1>
-</body>
+  <style>
+  @font-face {
+  font-family: "Product Sans";
+    src: url("css/fonts/ProductSans.ttf").format("ttf");
+    }
+  body {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px
+    }
+
+  .head {
+    background-color: #3577e0;
+    font-family: Product Sans;
+    height: 10%;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    line-height: 10px;
+  }
+
+  .main_content {
+    font-family: Product Sans;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 10px;
+    background-color: #3577e0;
+    width: 70%;
+    margin: auto;
+  }
+
+  .alix_settings {
+    font-family: Product Sans;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 10px;
+    background-color: #3577e0;
+    width: 35%;
+    height: 250px;
+    margin-left: 10%;
+    margin-right: auto;
+    float: left;
+  }
+
+  .command_list {
+    font-family: Product Sans;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    line-height: 10px;
+    background-color: #3577e0;
+    width: 35%;
+    height: 250px;
+    float: right;
+    margin-left: auto;
+    margin-right: 10%;
+  }
+  </style>
+
+  <body>
+    <div id="head" class="head">
+      <h1>Alixana</h1>
+      <p>Conceptual Frontend - Test commands with ease</p>
+    </div>
+
+    <div id="spacer01" style="height: 5%"></div>
+
+    <div id="main_content" class="main_content">
+      <form>
+        <h2>Conversation</h2>
+        <p>Enter a command, such as 'run protocol ax101' or run natural language like 'Hello, Ally!'</p>
+        <input type="text" name="user_input"/>
+        <input type="submit" value="Send Query" class="submit_button"/>
+      </form>
+    </div>
+
+  <div id="spacer04" style="height: 10%"></div>
+    <div id="settings" class="alix_settings">
+      <h2>Settings</h2>
+      <form>
+        <p>Testing Server Address</p>
+        <input type="text" name="server_address" placeholder="XXX.XXX.X.X"/>
+        <input type="submit" value="Upate Server Address" class="update_server"/>
+      </form>
+    </div>
+
+    <div id="command_list" class="command_list">
+      <h2>Command List</h2>
+      <h3>Basic Commands</h3>
+      <p>To be changed as new features are implemented</p>
+    </div>
+  </body>
 </html>
